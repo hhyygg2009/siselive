@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.switch{
+	    margin: 50px auto;
+    width: 400px;
+    height: 450px;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: center;
+    border: 3px solid #4faccb;
+    border-radius: 20px;
+    background: #f5f8fd;
+	position: relative;
+}
+body {
+    background: url("../images/bg1.jpg") no-repeat;
+    background-size: cover;
+}
+iframe{
+	width: 300px;
+    height: 400px;
+}
+.right{
+	position: absolute;
+	left: 400px;
+	top:0px;
+}
+.content{
+	height: 800px;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	div{
+		width: 640px;
+		height: 480px;
+		position: relative;
+		float: left;
+		overflow: hidden;
+	}
+	div ul{
+		position: absolute;
+		width: 1920px;
+	}
+	div ul li{
+		list-style: none;
+		float: left;
+	}
+	div a{
+		position: absolute;
+		top:180px;
+		height: 40px;
+		width: 20px;
+	}	
+	div a.before{
+		top: 180px;
+		left: 0;
+		
+		background: rgba(0,0,0,0.3) url(images/arrowl.png) no-repeat center center;
+	}
+	div a.after{
+		top: 180px;
+		right: 0;
+		background: rgba(0,0,0,0.3) url(images/arrowr.png) no-repeat center center;
+	}
+</style>
+</head>
+
+<body>
+	<div>
+	<ul>
+		<li><img src="images/01.jpg" alt=""></li>
+		<li><img src="images/02.jpg" alt=""></li>
+		<li><img src="images/03.jpg" alt=""></li>
+	</ul>
+	<a href="#" class="before">ii</a><a href="#" class="after">ii</a></div>
+</body>
+</html>

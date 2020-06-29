@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+body{
+    background: #f9f6ef;
+}
+.top{
+    height: 31px;
+    border: 1px solid #ccc;
+    background: #f4f4f4 url(images/topbg.jpg);
+    min-width: 1280px;
+}
+.top .topnav{
+    width: 990px;
+    min-width: 990px;
+    margin: 0 auto;
+}
+.top ul{
+    float: right;
+}
+.top ul li{
+    list-style: none;
+    float:left;
+    padding-left: 20px;
+    line-height: 31px;
+}
+.top ul li:nth-child(2){
+    background:url("../images/icons.png") no-repeat -407px -720px;
+}
+.top ul li:nth-child(3){
+    background:url("../images/icons.png") no-repeat -407px -689px;
+}
+.top ul li:nth-child(4){
+    background:url("../images/icons.png") no-repeat -402px -755px;
+}
+.top ul li:nth-child(2):hover a {
+    color:#c00;
+    display: block;
+}
+.top ul li:nth-child(2):hover{
+     background: #ccc url("../images/icons.png") no-repeat -407px -720px;
+}
+.top ul li a{
+    text-decoration: none;
+    color: #7f7d7c;
+}
+header{
+    height: 112px;
+    background:#fff url("../images/headerbg.jpg") no-repeat center center;
+     min-width: 1280px;
+}
+header .head{
+    width: 990px;
+    height: 112px;
+    margin: 0 auto;
+  
+}
+header .head img{
+    margin-top:25px;
+}
+nav{
+    height: 40px;
+    background:url("../images/navbg.jpg");
+    min-width: 1280px;
+}
+nav .nav{
+    width:990px;
+    margin: 0 auto;
+}
+nav .nav ul{
+    width: 420px;
+    
+    margin: 0 auto;
+}
+nav .nav ul li{
+    width:80px;
+    height: 40px;
+    list-style: none;
+    float: left;
+    margin:0 10px;
+    line-height: 40px;
+    font-family: "微软雅黑";
+    text-align: center;
+}
+nav .nav ul li:hover{
+     background:url("../images/navbg2.jpg");
+}
+nav .nav ul li a{
+    text-decoration: none;
+    color: #fcfdfa;
+    font-size:14px;
+
+}
+.banner{
+    height: 360px;
+    background:url("../images/content_bg.jpg");
+         min-width: 1280px;
+}
+.banner .b{
+    width: 990px;
+    height: 360px;
+    margin: 0 auto;
+}
+.banner .left{
+    height: 360px;
+    width: 202px;
+    float: left;
+    background-color: #f9f8f4;
+}
+.banner .center{
+    height: 360px;
+    width: 550px;
+    float: left;
+    background-color: #fff;
+}
+.banner .right{
+    height: 360px;
+    width: 238px;
+    float: right;
+    background-color: #f9f8f4;
+}

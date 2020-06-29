@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: url("images/form_bg.jpg") no-repeat;
+			width: 1600px;;
+		}
+		p{
+			text-align: center;
+		}
+
+
+		form{
+			margin: 50px auto;
+	width: 300px;
+	height: 850px;
+	padding-top: 20px;
+	padding-left: 20px;
+	text-align: right;
+
+		}
+		input{
+			width: 200px;
+			height: 20px;
+			margin-top: 20px;
+		}
+		input[placeholder="xxx@163.com"]{
+			
+			right: 14px;
+
+		}
+
+
+		input[value="提交"]{
+			height: 40px;
+			width: 70px;
+			margin: 20px 20px 0 50px;
+			border: 1px solid;
+			border-radius: 2px;
+			background:#5BB437;
+			
+			color: white;
+			
+		}
+		input[value="重置"]{
+			height: 40px;
+			width: 70px;			
+			border: 1px solid;
+			border-radius: 2px;
+			background:#5BB437;
+			
+			color: white
+		}		
+	</style>
+</head>
+	<body>
+	
+	<form action="post">
+		<p>学院信息登记表</p>
+	用户登录名: <input type="text" placeholder="xxx@163.com" disabled><br>
+	真实姓名: <input type="text" placeholder="例如:王明"><br>
+	真是年龄: <input type="text" value="24"><br>
+	出生日期: <input type="date" placeholder=""><br>
+	电子邮箱: <input type="mail" placeholder="xxxx@163.com"><br>
+	身份证号: <input type="text" placeholder=""><br>
+	手机号码: <input type="text" placeholder=""><br>
+	个人首页: <input type="text" placeholder=""><br>
+	颜色: <input type="color" placeholder=""><br>
+	
+		<p><input type="button" value="提交">
+		<input type="reset" value="重置"></p>
+			
+	</form>
+	
+
+</body>
+</html>

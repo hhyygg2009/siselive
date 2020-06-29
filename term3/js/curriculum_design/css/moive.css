@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+.carousel-inner {
+	
+	height: 400px;
+}
+#banner{
+	height: 230px;
+	width: 100%;
+	background: linear-gradient(#000,#333);
+	float: left;
+		
+}
+
+.info{
+	position: relative;
+	height: 420px;
+	top: -130px;
+	clear: left;
+}
+.head h1{
+	display: block;
+	height: 70px;
+}
+.head p{
+	height: 60px;
+}
+.head{
+	color: white;
+}
+.info img:first-child{
+	width: 283px;
+	height: 390px;
+	float: left;
+	box-shadow: 5px 5px rgba(111,111,111,0.5);
+	margin:20px;
+}
+.story p{
+	height: 250px;
+}
+.pics{
+	
+	margin-bottom: 20px;
+}
+.pics h3{
+	text-align:left;
+}
+
+.movie{
+	width: 1000px;
+	height: 800px;
+
+}
+
+.movielite{
+	display: inline-block;	
+	height: 312px;
+	margin: 0 20px;
+	font-size: 12px;
+	width: 150px;
+}
+.movielite a:last-child{
+	height: 18px;
+	width: 50px;
+	background: repeating-linear-gradient(#99cc00,#669900);
+	border: 1px #99cc00;
+	border-radius: 2px;
+	color: white;
+	text-align: center;
+	float: right;
+
+}
+
+.movielite p:only-child{
+	color: green;
+}

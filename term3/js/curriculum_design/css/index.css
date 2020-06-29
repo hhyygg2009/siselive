@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.lists{
+	height: 120px;
+	margin-bottom: 20px;
+	
+}
+.list{
+	float: left;
+	margin: 0px 5px;
+	background-color: #EEE;
+	height: 110px;
+}
+
+
+.list:last-child{
+	margin-right: 0;
+}
+.list h4{
+	padding-left: 25px ;
+	
+	background: url("../images/bottom2.jpg") no-repeat;
+}
+
+
+.link4{
+	width: 350px;
+	
+	
+}
+.lists .link4 a{
+	
+	padding: 2px 10px;
+	
+}
+
+.link2{
+	width: 130px;
+	
+}
+.lists .link2 a{
+	
+	padding: 2px 8px;
+	
+}
+
+.contentbox {
+    width: 990px;
+    border: 1px solid #e2e2e2;
+	margin-bottom: 26px;
+}
+.content {
+    height: 310px;
+    background-color: fff;
+	
+}
+.contentbar {
+    height: 40px;
+    border-top: 1px solid #e2e2e2;
+	 border-bottom: 1px solid #e2e2e2;
+    background-color: #f6f6f6;
+}
+.contentbar p{
+	text-align: center;
+	line-height:  40px;
+	width: 202px;
+	font-size: 20px;
+	background: #7dac0b;
+}
+.movie{
+	width: 1000px;
+	height: 800px;
+
+}
+
+.movielite{
+	display: inline-block;	
+	height: 312px;
+	margin: 0 20px;
+	font-size: 12px;
+	width: 150px;
+}
+.movielite a:last-child{
+	height: 18px;
+	width: 50px;
+	background: repeating-linear-gradient(#99cc00,#669900);
+	border: 1px #99cc00;
+	border-radius: 2px;
+	color: white;
+	text-align: center;
+	float: right;
+
+}
+
+.movielite p:only-child{
+	color: green;
+}
+
+
+

@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lab11_2 jQuery实现注册验证</title>
+<link type="text/css" href="main.css" rel="stylesheet"/>
+<!--（1）引用本地jQuery.js文件jquery/jquery-3.3.1.min.js-->
+<script type="text/javascript" src=./jquery/jquery-3.3.1.min.js></script>
+<!--（2）在页面上编写验证的jQuery代码-->
+<script type="text/javascript" src=js/checkRegister.js></script>
+<!--引用产生验证码的js-->
+<script type="text/javascript" src="js/yanCode.js"></script>
+</head>
+
+<body>
+<h1 align="center">用户注册页面</h1>
+<hr/>
+<form id="form1" name="form1" method="post" action="http://www.sise.com.cn">
+<table width="891" height="400" border="1" align="center" bgcolor="#FF9900">
+  <tr>
+    <td width="196" align="right" valign="middle"><strong>用&nbsp; 户&nbsp; 名：</strong></td>
+    <td width="356"><input name="name" type="text" id="name"  class="input" />
+      <span class="star">*</span></td>
+   <td width="317" id="name1"></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><strong>密&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 码：</strong></td>
+    <td><input name="pass" type="password" id="pass" class="input"/>
+      <span class="star">*</span></td>
+    <td width="317" id="pass1"></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><strong>确认密码：</strong></td>
+    <td><input name="password" type="password" id="password" class="input"/>
+      <span class="star">*</span></td>
+    <td width="317" id="password1"><div></div></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><strong>电子邮件：</strong></td>
+    <td><input name="email" type="text" id="email" class="input"/>
+      <span class="star">*</span></td>
+    <td id="email1"></td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><strong>手机号码：</strong></td>
+    <td><input name="phone" type="text" id="phone" class="input"/>
+      <span class="star">      *</span></td>
+    <td id="phone1">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><strong>身份证号：</strong></td>
+    <td><input name="ID" type="text" id="ID" class="input"/>
+      <span class="star">*</span></td>
+    <td id="ID1">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><strong>出生日期：</strong></td>
+    <td>
+      <select name="year" id="year">
+        <option checked="true">1980</option>
+      <option >1981</option>
+      <option>1982</option>
+      <option>1983</option>
+      <option>1984</option>
+      <option>1985</option>
+      <option>1986</option>
+      <option>1987</option>
+      <option>1988</option>
+      <option>1989</option>
+      <option>1990</option>
+      <option>1991</option>
+      <option>1992</option>
+      <option>1993</option>
+      <option>1994</option>
+      <option>1995</option>
+      <option>1996</option>
+      <option>1997</option>
+      <option>1998</option>
+      <option>1999</option>
+      <option>2000</option>
+      <option>2001</option>
+      <option>2002</option>
+      <option>2003</option>
+      <option>2004</option>
+      <option>2005</option>
+      <option>2006</option>
+      <option>2007</option>
+      <option>2008</option>
+      <option>2009</option>
+      <option>2010</option>
+      </select>
+      年 <select name="month" id="month">
+        <option checked="true">01</option>
+      <option >02</option>
+      <option>03</option>
+      <option>04</option>
+      <option>05</option>
+      <option>06</option>
+      <option>07</option>
+      <option>08</option>
+      <option>09</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+      </select>月
+      <select name="date" id="date">
+        <option checked="true">01</option>
+      <option >02</option>
+      <option>03</option>
+      <option>04</option>
+      <option>05</option>
+      <option>06</option>
+      <option>07</option>
+      <option>08</option>
+      <option>09</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+      <option>13</option>
+      <option>14</option>
+      <option>15</option>
+      <option>16</option>
+      <option>17</option>
+      <option>18</option>
+      <option>19</option>
+      <option>20</option>
+      <option>21</option>
+      <option>22</option>
+      <option>23</option>
+      <option>24</option>
+      <option>25</option>
+      <option>26</option>
+      <option>27</option>
+      <option>28</option>
+      <option>29</option>
+      <option>30</option>
+      <option>31</option>
+      </select>日  <span class="star">*</span></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><strong>出&nbsp; 生&nbsp; 地：</strong></td>
+    <td><select name="province" id="province" onchange="selectVal()">
+    <option value="" selected>-所在省份-</option>
+     <option value="安徽">安徽</option>
+     <option value="北京">北京</option>
+     <option value="重庆">重庆</option>
+     <option value="福建">福建</option>
+     <option value="甘肃">甘肃</option>
+     <option value="广东" selected="selected">广东</option>
+     <option value="广西">广西</option>
+     <option value="贵州">贵州</option>
+     <option value="海南">海南</option>
+     <option value="河北">河北</option>
+     <option value="黑龙"江>黑龙江</option>
+     <option value="河南">河南</option>
+     <option value="香港">香港</option>
+     <option value="湖北">湖北</option>
+     <option value="湖南">湖南</option>
+     <option value="江苏">江苏</option>
+     <option value="江西">江西</option>
+     <option value="吉林">吉林</option>
+     <option value="辽宁">辽宁</option>
+     <option value="澳门">澳门</option>
+     <option value="内蒙古">内蒙古</option>
+     <option value="宁夏">宁夏</option>
+     <option value="青海">青海</option>
+     <option value="山东">山东</option>
+     <option value="上海">上海</option>
+     <option value="山西">山西</option>
+     <option value="陕西">陕西</option>
+     <option value="四川">四川</option>
+     <option value="台湾">台湾</option>
+     <option value="天津">天津</option>
+     <option value="新疆">新疆</option>
+     <option value="西藏">西藏</option>
+     <option value="云南">云南</option>
+     <option value="浙江">浙江</option>
+   </select>省
+<select name="city">
+<option selected="selected">广州市</option>
+<option>深圳市</option>
+<option>珠海市</option>
+ <option>汕头市</option>
+ <option>韶关市</option>
+ <option>湛江市</option>
+ <option>佛山市</option>
+ <option>江门市</option>
+ <option>潮州市</option> 
+ <option>茂名市</option> 
+ <option>河源市</option>
+ <option>肇庆市
+ <option>惠州市</option>
+ <option>梅州市
+ <option>汕尾市</option>
+ <option>阳江市</option>
+ <option>东莞市</option>
+ <option>清远市</option>
+ <option>揭阳市</option>
+ <option>云浮市</option>
+ <option>石家庄</option>
+ <option>保定市</option>
+ <option>秦皇岛</option>
+ <option>唐山市</option>
+ <option>邯郸市</option> 
+ <option>邢台市</option> 
+ <option>沧州市</option> 
+ <option>承德市</option>
+ <option>廊坊市
+ <option>衡水市</option>
+ <option>张家口</option>  
+ </Select>
+市
+<span class="star">*</span></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><strong>邮政编码：</strong></td>
+    <td><input name="code" id="code" type="text" class="input"/>
+      <span class="star">*</span></td>
+    <td id="code1">&nbsp;</td>
+  </tr>  
+  <tr>
+    <td align="right" valign="middle"><strong>兴趣爱好：</strong></td>
+    <td><select name="hobby">
+<option  selected="selected">唱歌</option>
+<option>跳舞</option>
+<option>瑜伽</option>
+ <option>爬山</option>
+ <option>阅读</option>
+ <option>手机族</option>
+ <option>运动</option>
+ </select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle"><strong>验&nbsp; 证&nbsp; 码：</strong></td>
+    <td>
+      <input type="text" id="input1" name="yancode" /><input type="text" readonly id="checkCode" class="unchanged" style="width: 80px; background-color:#0F0"/><span class="star">*</span></td>
+    <td id="yancode1">&nbsp;</td>
+  </tr>
+<tr>
+    <td>&nbsp;</td>
+    <td colspan="2" align="center" valign="middle"><button type="submit" id="user_submit">注册</button>
+    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <button type="reset" >重置</button>
+    </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

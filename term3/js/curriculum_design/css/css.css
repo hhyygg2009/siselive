@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding: 0;
+	margin: 0;	
+}
+
+
+.center{
+		width: 1000px;
+	margin: 0 auto;
+}
+#playimg
+{
+	margin-bottom: 20px;
+}
+
+#content{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+	
+	
+}
+li{list-style: none;}
+a{text-decoration: none;}
+
+
+nav .icon{
+	height: 40px;
+}
+nav .icons{
+	position: relative;
+	top: 10px;
+}
+nav .iconlte{
+	height: 20px;
+	position: relative;
+	left: 20px;
+}
+
+.carousel-item img{
+	height: 400px;
+}
+
+#bottombox{
+	background: #f5f8fd;
+	height: 150px;
+	padding-bottom: 200px;
+
+}
+
+
+.bottombox2{
+	float: left;
+	padding: 20px;
+}
+.bottombox2 p{
+	padding-left: 28px ;
+	background: url("../images/bottom2.jpg") no-repeat;
+	
+}
+.bottombox2 a{
+	padding-left: 5px;
+}
+.bottomtext{
+	background: #836e5d;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	color: #dfdad7;
+}

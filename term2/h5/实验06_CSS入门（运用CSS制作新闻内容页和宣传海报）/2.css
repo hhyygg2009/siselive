@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face
+{
+	font-family: f1;
+	src: 
+		url("font/BOOMBOX.TTF");
+}
+@font-face
+{
+	font-family: f2;
+	src: 
+		url("font/FZJZJW.TTF");
+}
+@font-face
+{
+	font-family: f3;
+	src: 
+		url("font/LTCH.TTF");
+}
+@font-face
+{
+	font-family: f4;
+	src: 
+		url("font/ONYX.TTF");
+}
+@font-face
+{
+	font-family: f5;
+	src: 
+		url("font/ROCK.TTF");
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.c1{
+	font-family: f4;
+	font-size: 30px;
+	letter-spacing: 2px;
+	
+}
+.c1 span
+{
+	color: green;
+}
+.c2{
+	font-family: f1;
+	font-style: italic;
+}
+.c2 span
+{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+}
+.c3{
+	font-weight: bolder;
+	font-size: 40px;
+	font-family: f2;
+}
+.c3 span
+{
+	color: hotpink;
+	font-size: 30px;
+}
+.c4{
+	font-family: f3;
+	font-size: 30px;
+}
+.c4 span
+{
+	color: hotpink;
+}
+.c5{
+	font-family: f5;
+	color: grey;
+}

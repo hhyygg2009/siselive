@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		*{
+			
+			margin: 0;
+			padding: 0;
+			
+		}
+		#container{
+			height: 800px;
+			width: 600px;
+			margin: 10px;
+			
+		}
+		header{
+			height: 200px;
+			width: 600px;
+			background:#111;
+			margin: 10px;
+			
+		}
+		#head1{
+			height: 100px;
+			width: 600px;
+			background:#222;
+			margin: 10px;
+		}
+		#content{
+			height: 620px;
+			width: 600px;
+			margin: 10px;
+			
+		}
+		#content1{
+			height: 600px;
+			width: 200px;
+			
+			
+			float: left;
+			
+			
+		}
+		.content1:first-child{
+			height: 300px;
+		}
+		.content1{
+			
+			width: 200px;
+			height: 150px;
+					
+			background:#444;
+			margin-bottom: 10px;
+		}
+		#content2{
+			height: 600px;
+			width: 190px;
+			
+			float: left;
+			
+		}
+		.content2{
+			margin-left: 10px;
+			height: 200px;
+			width: 390px;
+			background:#555;
+			margin-bottom: 10px;
+		}			
+		.content2:first-child{
+			height: 400px;
+		}
+		
+		footer{
+			height: 200px;
+			width: 600px;
+			background:#666;
+			margin: 10px;
+			clear: left;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+	<header></header>
+		<div id="head1"></div>
+		<div id="content">
+			
+		<div id="content1">
+			
+		<div class="content1"></div>
+		<div class="content1" style="background: #666"></div>
+		<div class="content1" style="background: #777"></div>
+		</div>
+		<div id="content2">
+		<div class="content2"></div>
+		<div class="content2" style="background: #888;"></div>
+		</div>
+		</div>
+	
+		<footer></footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+.lists{
+	margin-bottom: 20px;
+}
+.list{
+	
+	
+	background-color: #EEE;
+	height: 50px;
+	width: 1000px;
+	
+}
+
+
+.list h2{
+	float: left;
+	font-size: 18px;
+	background-color: #ddd;
+}
+.list h2::after{
+	content: ":";
+}
+
+
+.list{
+	
+	padding: 2px 10px;
+}
+.list a{
+
+	
+	padding: 2px 10px;
+	margin: 2px;
+}
+
+.movie{
+	width: 1000px;
+	height: 800px;
+
+}
+
+.movielite{
+	display: inline-block;	
+	height: 312px;
+	margin: 0 20px;
+	font-size: 12px;
+	width: 150px;
+}
+.movielite a:last-child{
+	height: 18px;
+	width: 50px;
+	background: repeating-linear-gradient(#99cc00,#669900);
+	border: 1px #99cc00;
+	border-radius: 2px;
+	color: white;
+	text-align: center;
+	float: right;
+
+}
+
+.movielite p:only-child{
+	color: green;
+}

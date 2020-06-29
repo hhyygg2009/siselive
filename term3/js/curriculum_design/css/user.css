@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background: url("../images/bg1.jpg") no-repeat;
+    background-size: cover;
+}
+#content {
+    height: 800px;
+}
+.left {
+    float: left;
+    height: 650px;
+    width: 124px;
+    background: #0093FF;
+}
+.left li {
+    padding: 5px 0;
+    text-align: center;
+}
+.left li a {
+    color: goldenrod;
+}
+.left li:first-child {
+    background: white;
+}
+.right {
+    float: left;
+    height: 650px;
+    width: 480px;
+    background: #f5f8fd;
+}
+.list h3 {
+    
+    
+    margin: 20px;
+}
+#account img {
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin: 0 20px;
+}
+#account {
+    width: 480px;
+    height: 120px;
+}
+.list {
+    margin-bottom: 20px;
+}
+input[value="修改密码"] {
+    margin: 20px;
+    border: 1px solid;
+    border-radius: 2px;
+    background: #5BB437;
+    padding: 2px 8px;
+}
+input[type="file"] {
+    margin: 20px;
+}

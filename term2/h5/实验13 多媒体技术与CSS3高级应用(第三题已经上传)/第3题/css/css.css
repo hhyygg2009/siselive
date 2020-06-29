@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+figure{
+	position:relative;
+	width:33%;
+	overflow:hidden;
+	height:350px;
+	float:left;
+}
+figcaption{
+	position:absolute;
+	top:0;
+	left:0;
+	color:#fff;
+}
+@media screen and (max-width:600px){
+	figure{
+		width:100%;
+	}
+}
+@media screen and (min-width:601px) and (max-width:1000px)
+{
+	figure{
+		width:50%;
+	}
+}
+@media screen and (min-width:1001px) and (max-width:1400px)
+{
+	figure{
+		width:33%;
+	}
+
+}
+@media screen and (min-width:1401px) and (max-width:1800px)
+{
+	figure{
+		width:25%;
+	}
+
+}
+figure figcaption p,div,h3{
+transition:all 0.35s;
+}
+figure img
+{
+transition:all 0.5s;
+}
+/*===========================================*/
+.one{
+background:#000;
+}
+.one figcaption{
+position:absolute;
+top:10%;
+left:10%;
+width:80%;
+height:80%;
+}
+.one img{
+transform:scale(1,1);
+}
+.one:hover img{
+transform:scale(1.5,1.5);
+opacity:0.7;
+}
+.one figcaption div{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:1px solid #fff;
+transform:scale(1.5,1.5);
+opacity:0;
+}
+.one:hover figcaption div{
+transform:scale(1,1);
+opacity:0.8;
+}
+.one figcaption p,.one figcaption h3{
+transform:translate(0,420px);
+opacity:0;
+}
+.one:hover figcaption p,.one:hover figcaption h3{
+transform:translate(0,0);
+opacity:0.8;
+}
+/*===========================================*/
+.two{
+background:#fc0;
+}
+.two figcaption{
+position:absolute;
+top:10%;
+left:10%;
+}
+.two figcaption p{
+transform:translate(-220px,0);
+-ms-transform:translate(-220px,0);
+-o-transform:translate(-220px,0);
+-moz-transform:translate(-220px,0);
+-webkit-transform:translate(-220px,0);
+}
+figure.two figcaption p:nth-of-type(1)
+{
+transition-delay:0.05s;
+}
+figure.two figcaption p:nth-of-type(2)
+{
+transition-delay:0.1s;
+}
+figure.two figcaption p:nth-of-type(3)
+{
+transition-delay:0.15s;
+}
+figure.two:hover figcaption p{
+transform:translate(0px,0px);
+}
+figure.two:hover img{
+	transform:translate(-50px,0);
+	opacity:0.8;
+}
+/*===========================================*/
+.three{
+background:green;
+}
+.three figcaption{
+width:80%;
+height:80%;
+top:10%;
+left:10%;
+padding:5px;
+}
+.three figcaption div{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:1px solid #fff;
+}
+.three figcaption  p{
+opacity:0;
+transform:translate(0,50px);
+line-height:32px;
+}
+.three:hover figcaption  p{
+opacity:0.8;
+transform:translate(0,0px);
+
+}
+.three:hover img{
+opacity:0.8;
+transform:translate(-50px,0);
+}
+.three figcaption div{
+transform:translate(0,-350px) rotate(0deg);
+
+}
+.three:hover figcaption div{
+transform:translate(0,0) rotate(360deg)   ;
+}

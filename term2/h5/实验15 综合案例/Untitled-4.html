@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>无标题文档</title>
+	<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+		li{
+			display: inline-block;
+			border: 1px solid;
+			height: 35px;
+				line-height: 35px;
+			width: 80px;
+		}
+		a{
+			color: white;
+		}
+#out {
+	width: 1000px;
+}
+#topnav {
+	height: 15px;
+	background-color: #aaa;
+}
+#banner {
+	height: 75px;
+	background-color: #FF2828;
+}
+#nav {
+	height: 35px;
+	background-color: #181CB8;
+}
+#content,iframe {
+	height: 350px;
+	width: 100%;
+		
+	background-color: #00FF6C;
+}
+	#footer {
+	height: 35px;
+	background-color: #F8FF00;
+}	
+</style>
+	</head>
+
+	<body>
+    <div id="out">
+      <div id="topnav"></div>
+      <div id="banner"></div>
+      <div id="nav">
+        <ul>
+          <li><a href="home.html" target="frame">网页首页</a></li>
+          <li><a href="about.html" target="frame">关于</a></li>
+          <li><a href="">网页首页</a></li>
+          <li><a href="">网页首页</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <iframe name="frame" scrolling="no"></iframe>
+      </div>
+      <div id="footer"></div>
+    </div>
+</body>
+</html>

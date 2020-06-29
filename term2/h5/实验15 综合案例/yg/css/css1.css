@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.slide {
+    width: 640px;
+    height: 360px;
+    position: relative;
+    margin: 20px auto;
+	margin-top: 0;
+    overflow: hidden;
+}
+#slide img {
+    width: 640px;
+    height: 360px;
+}
+ul#slide {
+    width: 640px;
+    height: 1600px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ul#slide li {
+    width: 640px;
+    height: 360px;
+    list-style: none;
+}
+ul#num {
+    width: 640px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+}
+ul#num li {
+    width: 33%;
+    height: 30px;
+    margin: 2 px;
+    
+    background-color: rgba(1,1,1,0.3);
+    border: 1px solid #eee;
+    float: left;
+    list-style: none;
+}
+ul#num li.on {
+    
+    
+    
+    background: #FFffff;
+}
+

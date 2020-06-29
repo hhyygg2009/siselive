@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+		.login{
+			margin: 50px auto;
+
+	padding-top: 20px;
+	padding-left: 20px;
+	background: #f5f8fd;
+
+		}
+		input[type="text"]{
+			background: url(../images/1.jpg) no-repeat 5px center;
+			padding-left: 20px;
+			margin-bottom: 10px;
+		}
+		input[type="password"]{
+			background: url(../images/2.jpg) no-repeat 5px center;
+			padding-left: 20px;
+		}
+		input[value="登录"]{
+			margin: 20px 20px 0 50px;
+			border: 1px solid;
+			border-radius: 2px;
+			background:#5BB437;
+			padding: 2px 8px;
+		}
+		input[value="忘记密码?"]{
+			margin: 20px 20px 0 10px;
+			border: 1px solid;
+			border-radius: 2px;
+			background:#E38D38;
+			padding: 2px 8px;
+		}
